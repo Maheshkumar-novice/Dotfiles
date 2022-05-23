@@ -1,0 +1,3 @@
+Subject - 50 Chars Max.
+
+Body - Wrap at 72 Chars.

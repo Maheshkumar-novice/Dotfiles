@@ -1,0 +1,9 @@
+[user]
+	name = Maheshkumar
+	email = email-address
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[commit]
+	template = /home/user-name/.gitmessage.txt

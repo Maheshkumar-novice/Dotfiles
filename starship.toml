@@ -1,0 +1,108 @@
+add_newline = false
+continuation_prompt = "▶▶ "
+command_timeout = 750
+#${custom.foo}
+format = """
+[┌───────────────────> ](bold purple)$username$directory
+[│](bold purple)
+[│](bold purple)\
+$hostname\
+$shlvl\
+$kubernetes\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$lua\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$status\
+$shell\
+[│](bold purple)
+[└─> ](bold purple)$time$character """
+
+
+[character]
+success_symbol = "[🚀 :](bold green)"
+error_symbol = "[:](bold red)"
+
+[git_branch]
+format = "[$symbol$branch](bright-purple italic) "
+symbol = " "
+
+[time]
+disabled = false
+format = " [at $time]($style) "
+
+[username]
+disabled = false
+show_always = true
+format = "[$user]($style) [in](bold cyan) "
+
+[hostname]
+ssh_only = false
+format =  "[on](cyan) [$hostname](italic bright-purple) "
+disabled = false
+
+[battery]
+disabled = false
+format = " [battery =>](bold yellow) [$percentage]($style) "
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+[[battery.display]]
+threshold = 50
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 20
+style = "bold red"
+
+#[custom.foo]
+#command = "uptime -p" 
+#when = """ test "1" == "1" """
+#format = "[$output](bold yellow)"

@@ -1,0 +1,12 @@
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias t="gnome-terminal"
+alias h=history
+alias c=clear
+alias upg='sudo apt update && sudo apt upgrade'
+alias upd='sudo apt update'
+alias x=xdg-open
+alias threshold="echo 65 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold"
+alias morning="threshold && upg"
