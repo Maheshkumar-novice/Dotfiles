@@ -7,3 +7,5 @@
 	ui = auto
 [commit]
 	template = /home/user-name/.gitmessage.txt
+[core]
+	editor = vim
