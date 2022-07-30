@@ -5,3 +5,6 @@ import sys
 # https://stackoverflow.com/a/9468954/1147688
 sys.ps1='\x01\x1b[1;49;33m\x02>>>\x01\x1b[0m\x02 '  # bright yellow
 sys.ps2='\x01\x1b[1;49;31m\x02...\x01\x1b[0m\x02 '  # bright red
+
+# Add this to your shell config/rc .zshrc/.bashrc
+# export PYTHONSTARTUP=location-of-this-file
